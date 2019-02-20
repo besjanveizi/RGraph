@@ -1,5 +1,4 @@
 #### PROGETTO R ####
-##authors: Besjan Veizi, Mariano Sabatino
 
 
 ################------- CODA -------################
