@@ -2,6 +2,7 @@
 Implementazione di un grafo e metodi BFS, Dijkstra e Kruskall in R
 
 Classe RC coda()
+
 implementa una coda (FIFO)
 viene usata nel metodo BFS(sorgente) - vedi 3
 contiene 3 campi:
@@ -16,7 +17,8 @@ Se invece la coda contiene qualche elemento eseguiamo le stesse operazioni sopra
 Se la coda è vuota, allora si restituisce un messaggio, altrimenti si elimina il valore in head facendo puntare head$successivo a head e si decrementando size e quindi si restituisce il valore.
 
 
-Classe RC Graph():
+Classe RC Graph()
+
 serve per implementare un grafo ed è composta dai campi 
 matriceAdiacenza: matrice per rappresentare il grafo
 vertici: lista di environment vertice, questi costituito dai campi nome e valore
