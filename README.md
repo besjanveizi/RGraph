@@ -1,22 +1,23 @@
 # RGraph
 Implementazione di un grafo e metodi BFS, Dijkstra e Kruskall in R
 
-Classe RC coda()  
-implementa una coda (FIFO)
-viene usata nel metodo BFS(sorgente) - vedi 3
-contiene 3 campi:
-	 size: numerico che indica lunghezza della coda;
-	 head e end: environment inizio e fine della coda, possiedono due campi, valore e 			    successivo, quest'ultimo è un environment che punta al prossimo 				    (elemento della coda) environment.
-contiene 3 metodi:
-	 isEmpty(): controlla se la coda è vuota confrontando size con 0.
-	 enqueue(): aggiunge un elemento alla coda.
-Nel caso la coda fosse già vuota, si aggiunge l'elemento in head$valore, si fa diventare head padre di head$successivo e  facciamo puntare head e end allo stesso environment poiché vi è un solo elemento.
-Se invece la coda contiene qualche elemento eseguiamo le stesse operazioni sopra usando tuttavia l'environment end, ovviamente non facciamo puntare head e end allo  stesso environment.
- dequeue(): rimuove l'elemento in testa dalla coda (FIFO) e lo restituisce
-Se la coda è vuota, allora si restituisce un messaggio, altrimenti si elimina il valore in head facendo puntare head$successivo a head e si decrementando size e quindi si restituisce il valore.
+**Classe RC coda()**  
+implementa una coda (FIFO)  
+viene usata nel metodo BFS(sorgente) - vedi 3  
+contiene 3 campi:  
+         size: numerico che indica lunghezza della coda;
+         head e end: environment inizio e fine della coda, possiedono due campi, valore e 
+         successivo, quest'ultimo è un environment che punta al prossimo (elemento della coda) environment.  
+contiene 3 metodi:  
+         isEmpty(): controlla se la coda è vuota confrontando size con 0.  
+         enqueue(): aggiunge un elemento alla coda.  
+Nel caso la coda fosse già vuota, si aggiunge l'elemento in head$valore, si fa diventare head padre di head$successivo e  facciamo puntare head e end allo stesso environment poiché vi è un solo elemento.  
+Se invece la coda contiene qualche elemento eseguiamo le stesse operazioni sopra usando tuttavia l'environment end, ovviamente non facciamo puntare head e end allo  stesso environment.  
+         dequeue(): rimuove l'elemento in testa dalla coda (FIFO) e lo restituisce  
+Se la coda è vuota, allora si restituisce un messaggio, altrimenti si elimina il valore in head facendo puntare head$successivo a head e si decrementando size e quindi si restituisce il valore.  
 
 
-Classe RC Graph()
+**Classe RC Graph()**  
 
 serve per implementare un grafo ed è composta dai campi 
 matriceAdiacenza: matrice per rappresentare il grafo
