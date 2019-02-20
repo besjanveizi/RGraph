@@ -2,7 +2,6 @@
 Implementazione di un grafo e metodi BFS, Dijkstra e Kruskall in R
 
 Classe RC coda()
-
 implementa una coda (FIFO)
 viene usata nel metodo BFS(sorgente) - vedi 3
 contiene 3 campi:
